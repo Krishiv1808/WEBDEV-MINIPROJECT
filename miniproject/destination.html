@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Bliss - Destination</title>
+  <link rel="stylesheet" href="stylesplan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      min-width: 160px;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown > a::after {
+      content: " ▼";
+      font-size: 0.7em;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+      <div class="logo">Travel Bliss</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Destinations</a>
+          <div class="dropdown-content">
+            <a href="destination.html?place=switzerland">Switzerland</a>
+            <a href="destination.html?place=paris">Paris</a>
+            <a href="destination.html?place=dubai">Dubai</a>
+            <a href="destination.html?place=bali">Bali</a>
+            <a href="destination.html?place=jaipur">Jaipur</a>
+            <a href="destination.html?place=lasvegas">Las Vegas</a>
+          </div>
+        </li>
+        <li><a href="projcontact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+
+  <section class="destination-info"></section>
+
+  <section class="plans">
+    <h2>Plan for the Destination</h2>
+    <ul></ul>
+  </section>
+
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+    <a href="projbook.html" class="book-now-btn">Book Now</a>
+  </div>
+
+ <footer>
+    <p>Follow Us:</p>
+    <div class="socials">
+      <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Travel Bliss. All rights reserved.</p>
+  </footer>
+
+
+  <script src="destination.js"></script>
+</body>
+</html>

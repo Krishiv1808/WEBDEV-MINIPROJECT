@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f8ff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1e90ff;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.socials a {
+    color: white;
+    margin: 0 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #1e90ff;
+}
+
+/* Additional page-specific styles */
+.destination-info {
+    padding: 100px;
+    text-align: center;
+}
+
+.plans {
+    padding: 40px;
+    text-align: center;
+}
+
+.plans ul {
+    list-style-type: none;
+}
+
+.plans li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.book-now-btn {
+    display: inline-block;
+    background-color: #ff4757;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+/* Responsive Header and Footer */
+@media (max-width: 1025px) {
+    
+    .destination-info {
+    padding: 100px;
+    text-align: center;
+    margin-top: 100px; 
+}
+   nav .logo {
+    font-size: 2rem;
+  }
+   nav ul li a {
+    font-size: 1.5rem;
+  }
+  
+    footer p {
+        font-size: 1.5rem;
+    }
+
+    .socials a {
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+   
+}
+
+@media (max-width: 600px) {
+      nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+align-items: center;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+  nav .logo {
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+  }
+   nav ul li a {
+    font-size: 1rem;
+  }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+    .plans ul li {
+    
+	font-size: 1rem;
+    }
+     .destination-info {
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+}

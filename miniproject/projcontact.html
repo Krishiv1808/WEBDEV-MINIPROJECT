@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Travel Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body  class="page-hero">
+
+  <nav>
+    <div class="logo">Travel Bliss</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projbook.html">Book Now</a></li>
+      <li><a href="projcontact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <div class="form-wrapper">
+      <form id="contactForm">
+        <h2 style="color:#1e90ff;">Contact Us</h2>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+	<input type="tel" placeholder="Phone number" required />	
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>Follow Us:</p>
+ <div class="socials">
+      <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Travel Bliss. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thanks for reaching out! We will contact you soon.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

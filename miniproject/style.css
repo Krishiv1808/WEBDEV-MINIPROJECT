@@ -1,0 +1,330 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f0f8ff;
+  color: #333;
+  scroll-behavior: smooth;
+  height: 100%;
+min-height: 100%;
+  
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #1e90ff;
+}
+
+.page-hero {
+  background: url('assets/backgroundimage.avif') no-repeat center center/cover;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  text-align: center;
+}
+
+header h1,
+.page-hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+header button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+header button:hover {
+  background: #ff4757;
+}
+
+
+section#destinations {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 0 20px;
+  margin: 0 50px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #333;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  padding: 0 10px 20px;
+  font-size: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.form-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 550px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+form button {
+  background: #1e90ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1c86ee;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  width: 100%;
+
+}
+
+.socials a {
+  color: white;
+  margin: 0 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 0 10px;
+}
+
+.socials a:hover {
+  color: #1e90ff;
+}
+
+
+@media (max-width: 1024px) {
+  .destinations {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 30px;
+  }
+  
+  nav .logo {
+    font-size: 2rem;
+  }
+   nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  header h1,
+  .page-hero h2 {
+    font-size: 2.5rem;
+  }
+
+   .form-wrapper {
+    max-width: 900px;
+    padding: 50px;
+  }
+
+  form {
+    padding: 40px;
+  }
+
+  input, textarea {
+    font-size: 1.5rem;
+    padding: 14px;
+  }
+  select {
+    font-size: 1.5rem;
+    padding: 14px;
+  }
+  form button {
+    font-size: 1.5rem;
+    padding: 14px;
+  }
+ 
+    .page-hero {
+    padding-top: 140px;
+    height: auto;
+    text-align: center;
+        
+  }
+  footer {
+    font-size: 1.5rem;
+  }
+
+  .socials a {
+    font-size: 1.8rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+  nav .logo {
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+  }
+   nav ul li a {
+    font-size: 1rem;
+  }
+
+  .page-hero {
+    padding-top: 140px;
+    height: auto;
+    text-align: center;
+  }
+
+  header h1,
+  .page-hero h2 {
+    font-size: 2rem;
+  }
+
+  header button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .destinations {
+    grid-template-columns: 1fr;
+    margin: 0 10px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .form-wrapper {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+   input, textarea, select {
+    font-size: 1.2rem;
+    padding: 12px; 
+    margin: 10px 0; 
+    width: 100%;   }
+
+  form button {
+    font-size: 1.2rem; 
+    padding: 12px;
+    width: 100%;
+  }
+
+  footer {
+    font-size: 1.2rem; 
+    padding: 15px; 
+  }
+
+  .socials a {
+    font-size: 1.5rem;
+  }
+}

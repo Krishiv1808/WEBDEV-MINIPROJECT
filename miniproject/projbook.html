@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Now - Travel Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="page-hero">
+
+  <nav>
+    <div class="logo">Travel Bliss</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projbook.html">Book Now</a></li>
+      <li><a href="projcontact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section >
+    <div class="form-wrapper">
+      <form id="bookingForm">
+        <h2 style="color:#1e90ff;">Book Your Travel Now</h2>
+
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Your Email" required />
+	<input type="tel" placeholder="Phone number" required />	
+        <input type="date" placeholder="Travel Date" required />
+	<input type="number" placeholder="Number of People" required />
+
+       <select style="text-align: left; direction: ltr; display: block; margin: 10px;" required>
+          <option value="">Select Destination</option>
+          <option value="destination1">Switzerland</option>
+          <option value="destination2">Bali</option>
+          <option value="destination3">Las Vegas</option>
+	  <option value="destination4">Paris</option>
+          <option value="destination5">Jaipur</option>
+          <option value="destination6">Dubai</option>
+        </select>
+
+        <textarea rows="5" placeholder="Special Requests (optional)"></textarea>
+        <button type="submit">Book Now</button>
+
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>Follow Us:</p>
+      <div class="socials">
+      <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 Travel Bliss. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Your booking request has been received! We will contact you soon.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
