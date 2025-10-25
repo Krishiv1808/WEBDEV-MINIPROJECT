@@ -23,7 +23,7 @@ miniproject/
       ├── lasvegas.jpg
       ├── dubai.jpg
       ├── jaipur.jpg
-├── README.md #This file
+README.md #This file
 ```
 ## 💡 Features
 
