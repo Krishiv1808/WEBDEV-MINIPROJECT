@@ -1,3 +1,6 @@
+# WEBDEV-MINIPROJECT
+Simple HTML CSS JS based static website created as an miniproject for first semester course "WEB DEV" in college.
+
 # 🌍 Travel Bliss Website
 
 Travel Bliss is a multi-page responsive travel website that showcases top travel destinations, offers booking functionality, and provides an easy way for users to contact the service.
