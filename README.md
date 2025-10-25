@@ -1,3 +1,5 @@
+VISIT - https://Krishiv1808.github.io/WEBDEV-MINIPROJECT/miniproject/index.html TO SEE PROJECT
+
 # WEBDEV-MINIPROJECT
 Simple HTML CSS JS based static website created as an miniproject for first semester course "WEB DEV" in college.
 
@@ -50,6 +52,8 @@ README.md #This file
 3. Open `index.html` in your browser.
 4. Click a destination to see the dynamic `destination.html`.
 5. Navigate using the fixed navbar to "Book Now" or "Contact Us".
+              OR
+1. Visit https://Krishiv1808.github.io/WEBDEV-MINIPROJECT/miniproject/index.html
 
 ## 🧱 Built With
 
